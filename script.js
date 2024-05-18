@@ -20,6 +20,12 @@ function Employee(name, age, jobTitle) {
 		console.log(`Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`);
 	};
 }
+const person1 = new Person('Alice', 25);
+person1.greet(); // Output: Hello, my name is Alice, I am 25 years old.
+
+// Create Employee instance
+const employee1 = new Employee('Bob', 30, 'Manager');
+employee1.jobGreet();
 
 // Employee.prototype = Object.create(Person.prototype);
 // Employee.prototype.constructor = Employee;
